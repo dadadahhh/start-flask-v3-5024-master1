@@ -64,7 +64,7 @@ cities_data = get_cities_data()
 reviews_data = get_reviews_data()
 print(reviews_data[0:10])
 
-@app.route('/stat', methods=['GET'])
+@app.route('/', methods=['GET'])
 def stat():
     return render_template('stat.html')
 
